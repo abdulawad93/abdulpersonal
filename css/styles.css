@@ -171,3 +171,14 @@ textarea{
     margin-left: 0;
   }
 }
+@media (max-width: 512) and (max-height: 512){
+  h1{
+      font-size:4rem;
+  }
+  h2{
+      font-size:3rem;
+  }
+  p{
+    font-size:2rem;
+  }
+}
