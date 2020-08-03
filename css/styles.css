@@ -1,0 +1,168 @@
+
+body
+{
+  text-align: center;
+}
+ul{
+  list-style: none;
+}
+
+hr{
+  border: dotted #E4F9F5 5px;
+  border-bottom: 0;
+  width: 5%;
+  margin: 50px auto;
+}
+i{
+  color: #c7b198;
+  float:left;
+}
+h1{
+  font-family: 'Oswald', sans-serif;
+}
+h2{
+  font-family: 'Tajawal-Medium', sans-serif;
+}
+h2{
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* Navbar styles */
+.nav-item{
+  padding: 10px 40px;
+}
+.nav-brand:hover{
+  text-decoration: none;
+}
+
+/* Introduction */
+#intro{
+  background-color: #c7b198;
+}
+#intro h1{
+  text-align: left;
+  font-size: 2.5rem;
+}
+#intro p{
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.profile-pic{
+  max-width: 70%;
+  height: auto;
+}
+#intro .row{
+  padding: 80px 0 10px;
+}
+
+.AI-img{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 25px;
+}
+.IoT-img{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 25px;
+}
+/* School */
+
+
+#school{
+  padding: 40px 0 10px;
+  background-color: #dfd3c3;
+  text-align: center;
+}
+#school h1{
+  padding: 10px 0 10px;
+}
+#school h2{
+  padding-bottom: 5px;
+}
+#school p{
+  padding: 0 130px 0;
+}
+#school a{
+  color: #212529;
+}
+#school a:hover{
+  text-decoration: none;
+}
+
+#work{
+  padding:40px 0 10px;
+  background-color: #c7b198;
+  text-align: center;
+}
+#work h1{
+  padding: 10px 0 10px;
+}
+#work h2{
+  font-size: 1.25rem;
+}
+#work a{
+  color: #212529;
+}
+#skills{
+  padding:40px 0 10px;
+  text-align: center;
+  background-color: #dfd3c3;
+}
+.skill-block{
+  width:40%;
+  margin: 100px auto 100px;
+}
+.skill-img-odd{
+  width: 40%;
+  margin: 100px auto 100px;
+  float: left;
+  margin-right:40px;
+  position: relative;
+  bottom: 70px;
+}
+.skill-img-even{
+  width: 40%;
+  margin: 100px auto 100px;
+  float: right;
+  margin-left:40px;
+  position: relative;
+  bottom: 40px;
+}
+#contact{
+  padding:60px 0 10px;
+  text-align: center;
+  background-color: #c7b198;
+}
+
+#contact h1{
+  padding-bottom: 20px;
+}
+#contact a{
+  color: #212529;
+  font-weight: bolder;
+}
+
+.msgTitle{
+  width: 597px;
+  max-width: 100%;
+}
+textarea{
+  max-width:100%;
+}
+
+@media (max-width: 985px){
+  .skill-block{
+    margin: 100px auto 100px;
+  }
+  .skill-img-odd{
+    float:none;
+    margin-right: 0;
+  }
+  .skill-img-even{
+    float:none;
+    margin-left: 0;
+  }
+}
