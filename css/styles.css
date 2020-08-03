@@ -178,7 +178,7 @@ textarea{
   h2{
       font-size:6rem;
   }
-  p{
+  p, li, a{
     font-size:4rem;
   }
 }
