@@ -26,6 +26,9 @@ h2{
 h2{
   font-family: 'Tajawal', sans-serif;
 }
+p{
+  font-size: 1rem;
+}
 
 /* Navbar styles */
 .nav-item{
