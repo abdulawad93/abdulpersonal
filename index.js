@@ -8,9 +8,12 @@ $(".msgTitle").on("keydown", function(event){
   }
 });
 
-/*$(".nav-link").on('click', function(){
+if($(window).width()<992){
+  console.log("lol");
+$(".nav-link").on('click', function(){
     $(".navbar-nav").hide();
 });
 $(".navbar-toggler").on('click', function(){
   $(".navbar-nav").show();
-});*/
+});
+}
