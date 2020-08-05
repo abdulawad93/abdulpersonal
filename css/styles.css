@@ -184,4 +184,14 @@ textarea{
   #school p{
     padding: 0 20px 0;
   }
+  @media screen and (max-width: 600px)
+{
+  .edu-block{
+    padding: 30px 50px 30px 50px;
+  }
+  .edu-carousel{
+    background-color: #596e79;
+    color: #dfd3c3;
+  }
+}
 }
