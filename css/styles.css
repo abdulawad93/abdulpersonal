@@ -52,12 +52,6 @@ hr{
   margin: 50px auto;
 }
 
-@media screen and (max-width: 670px)
-{
-  h2{
-    text-align: center;
-  }
-}
 
 /*General Classes*/
 
