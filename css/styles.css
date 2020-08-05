@@ -1,190 +1,135 @@
 
-body
+/* Tags */
+
+html,body
 {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
   text-align: center;
 }
+
+h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+}
+
+h2{
+  font-family: 'Tajawal Medium', sans-serif;
+  font-size: 3rem;
+}
+
+p{
+  text-align: left;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+a{
+  color: #212529;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
 ul{
-  list-style: none;
+  text-align: left;
+  padding-left: 15px;
+}
+
+li{
+  font-size: 2rem;
 }
 
 hr{
-  border: dotted #E4F9F5 5px;
+  border: dotted #dfd3c3 5px;
   border-bottom: 0;
-  width: 5%;
+  width: 10%;
   margin: 50px auto;
 }
-i{
-  color: #c7b198;
-  float:left;
-}
-h1{
-  font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
-}
-h2{
-  font-family: 'Tajawal-Medium', sans-serif;
-  font-size: 1.5rem
-}
-h2{
-  font-family: 'Tajawal', sans-serif;
-}
-p{
-  font-size: 1rem;
-}
-
-/* Navbar styles */
-.nav-item{
-  padding: 10px 40px;
-}
-.nav-brand:hover{
-  text-decoration: none;
-}
-
-/* Introduction */
-#intro{
-  background-color: #c7b198;
-}
-#intro h1{
-  text-align: left;
-  font-size: 2.5rem;
-}
-#intro p{
-  text-align: left;
-  font-weight: bold;
-  font-size: 1rem;
-}
-.profile-pic{
-  max-width: 70%;
-  height: auto;
-}
-#intro .row{
-  padding: 80px 0 10px;
-}
-
-.AI-img{
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  bottom: 25px;
-}
-.IoT-img{
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  bottom: 25px;
-}
-/* School */
 
 
-#school{
-  padding: 40px 0 10px;
-  background-color: #dfd3c3;
-  text-align: center;
+/*General Classes*/
+
+.container-fluid{
+  padding-left: 175px;
+  padding-right: 175px;
 }
-#school h1{
-  padding: 10px 0 10px;
-}
-#school h2{
-  padding-bottom: 5px;
-}
-#school p{
-  padding: 0 130px 0;
-}
-#school a{
-  color: #212529;
-}
-#school a:hover{
-  text-decoration: none;
+#school .container-fluid{
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-#work{
-  padding:40px 0 10px;
-  background-color: #c7b198;
-  text-align: center;
-}
-#work h1{
-  padding: 10px 0 10px;
-}
-#work h2{
-  font-size: 1.25rem;
-}
-#work a{
-  color: #212529;
-}
-#skills{
-  padding:40px 0 10px;
-  text-align: center;
-  background-color: #dfd3c3;
-}
-.skill-block{
-  width:40%;
-  margin: 100px auto 100px;
-}
-.skill-img-odd{
-  width: 40%;
-  margin: 100px auto 100px;
-  float: left;
-  margin-right:40px;
-  position: relative;
-  bottom: 70px;
-}
-.skill-img-even{
-  width: 40%;
-  margin: 100px auto 100px;
-  float: right;
-  margin-left:40px;
-  position: relative;
-  bottom: 40px;
-}
-#contact{
-  padding:60px 0 10px;
-  text-align: center;
-  background-color: #c7b198;
-}
-
-#contact h1{
-  padding-bottom: 20px;
-}
-#contact a{
-  color: #212529;
-  font-weight: bolder;
-}
-
-.msgTitle{
-  width: 597px;
-  max-width: 100%;
-}
-textarea{
-  max-width:100%;
-}
-
-@media (max-width: 985px){
-  .skill-block{
-    margin: 100px auto 100px;
-  }
-  .skill-img-odd{
-    float:none;
-    margin-right: 0;
-  }
-  .skill-img-even{
-    float:none;
-    margin-left: 0;
+@media screen and (max-width: 725px){
+  .container-fluid{
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
-@media only screen and (max-width: 700){
+
+@media screen and (max-width: 300px){
   h1{
-      font-size:2rem;
+    font-size: 2rem;
   }
   h2{
-      font-size:1.5rem;
+    font-size: 1.5rem;
   }
-  p, li, a{
-    font-size:1rem;
+  p,a,li{
+    font-size: 1rem;
   }
-  #school p{
-    padding: 0 20px 0;
+}
+
+/* Sections */
+
+#intro{
+  margin-top:50px;
+}
+
+#intro, #work, #contact{
+  background-color: #c7b198;
+  padding: 30px 0;
+}
+
+#school, #skills{
+  background-color: #dfd3c3;
+  padding: 30px 0;
+}
+
+
+/*Introduction Section*/
+
+.profile-pic, .tech-img{
+  max-width: 100%;
+  height: auto;
+  width: auto/9;
+}
+
+
+
+/* Eduction Section */
+
+.edu-carousel{
+  padding-top: 30px;
+}
+.edu-block{
+  padding: 30px 175px 30px 175px;
+}
+
+@media screen and (max-width: 1276px)
+{
+  .edu-block{
+    padding: 30px 120px 30px 120px;
   }
-  @media screen and (max-width: 600px)
+  .edu-carousel{
+    background-color: #596e79;
+    color: #dfd3c3;
+  }
+}
+@media screen and (max-width: 670px)
 {
   .edu-block{
     padding: 30px 50px 30px 50px;
@@ -194,4 +139,49 @@ textarea{
     color: #dfd3c3;
   }
 }
+
+/*Skills Section*/
+
+.skill-block{
+  width: 70%;
+  margin: 50px auto;
+}
+.skill-img-odd, .skill-img-even{
+  color: #c7b198;
+  width: 5%;
+}
+
+
+.skill-img-odd{
+  float: left;
+  margin: 0 auto 50px;
+}
+.skill-img-even{
+  float: right;
+  margin: 50px auto 0;
+}
+
+@media (max-width: 1276px) {
+  .skill-img-odd, .skill-img-even{
+    float: none;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 725px){
+  .skill-block{
+    width: 100%;
+  }
+}
+
+
+/* Contact Section */
+.form-group{
+  text-align: left;
+}
+.message-content{
+  width: 95%;
+}
+.msgTitle{
+  width: 95%;
 }
