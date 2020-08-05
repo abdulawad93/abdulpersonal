@@ -8,9 +8,9 @@ $(".msgTitle").on("keydown", function(event){
   }
 });
 
-$(".nav-link").on('click', function(){
+/*$(".nav-link").on('click', function(){
     $(".navbar-nav").hide();
 });
 $(".navbar-toggler").on('click', function(){
   $(".navbar-nav").show();
-});
+});*/
