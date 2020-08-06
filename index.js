@@ -9,11 +9,10 @@ $(".msgTitle").on("keydown", function(event){
 });
 
 if($(window).width()<992){
-  console.log("lol");
 $(".nav-link").on('click', function(){
-    $(".navbar-nav").hide();
+    $(".navbar-collapse").toggle();
 });
 $(".navbar-toggler").on('click', function(){
-  $(".navbar-nav").show();
+    $(".navbar-collapse").toggle();
 });
 }
