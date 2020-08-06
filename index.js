@@ -10,6 +10,6 @@ $(".msgTitle").on("keydown", function(event){
 
 if($(window).width()<992){
 $(".nav-link").on('click', function(){
-    $(".navbar-collapse").collapse();
+    $(".navbar-collapse").collapse('hide');
 });
 }
