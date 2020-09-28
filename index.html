@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body id="home">
 
 
   <!-- Introduction Structure -->
@@ -30,7 +30,7 @@
       <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="nav-brand" href="#"><strong>A Awad</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,9 +38,23 @@
             <li class="nav-item"><a class="nav-link" href="#school">Education</a></li>
             <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinkContent">
+          <span class="fas fa-folder-open"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarLinkContent">
+          <ul class="navbar-nav ml-auto toggler">
+        <li class="nav-item nav-icons"><a class="nav-link fas fa-file fa-2x nav-icons" href="files/resume.docx"></a></li>
+        <li class="nav-item nav-icons"><a class="nav-link fab fa-linkedin fa-2x nav-icons" href="https://www.linkedin.com/in/abdul-rahman-awad/"></a></li>
+        <li class="nav-item nav-icons"><a class="nav-link fab fa-twitter fa-2x nav-icons" href="https://twitter.com/AawadUltimate"></a></li>
+        <li class="nav-item nav-icons"><a class="nav-link fab fa-github fa-2x nav-icons" href="https://github.com/abdulawad93"></a></li>
+        </ul>
+        </div>
+
       </nav>
 
       <!-- Introduction Content -->
@@ -66,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 profile-pic-container">
           <img class="profile-pic" src="images/abdul-rahman-awad.jpg" alt="Abdul-Rahman-Awad" />
         </div>
       </div>
@@ -218,20 +232,79 @@
         <h1>Skills</h1>
         <div class="skill-block">
           <i class="fas fa-code fa-4x skill-img-odd"></i>
-        <h2>Programming</h2>
-        <p>I have a good experience in coding in Java, HTTP, CSS, Javascript, and SQL. Also, I am able to learn other programming language easily</p>
+        <h2>Frontend Web Development</h2>
+        <p>Excellent knowledge of HTML, CSS, and Javascript. Experience in using Bootstrap, DOM, and JQuery. Experience in ReactJs using React hooks and components</p>
         </div>
         <div class="skill-block">
-        <i class="fas fa-poll fa-4x skill-img-even"></i>
-      <h2>Marketing</h2>
-      <p>I have a great understanding of marketing concepts including positioning, segmenation, Communications, promotions, and advertising</p>
+        <i class="fas fa-server fa-4x skill-img-even"></i>
+      <h2>Backend Web Development</h2>
+      <p>Experience in using NodeJs, ExpressJs, and NPM Package. Experience in setting up REST APIs. knowledge of SQL and NoSQL and Experience in MongoDB</p>
     </div>
     <div class="skill-block">
-      <i class="fas fa-keyboard fa-4x skill-img-odd"></i>
-      <h2>Data-Entry</h2>
-      <p>I have great keyboarding skills with the ability to type upto 50 wpm</p>
+      <i class="fas fa-poll fa-4x skill-img-odd"></i>
+      <h2>Marketing</h2>
+      <p>Great knowledge of marketing concepts, including marketing Communications, segmentation, advertising, and content publishing. Understanding of design related aspects, such as color and font psychologies.</p>
     </div>
   </div>
+  </div>
+  <div id="projects">
+    <div class="container-fluid">
+      <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" wrap="false">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+
+            <div class="card">
+              <img class="card-img-top" src="images/aawadBlog.JPG" alt="aawad-blog-app">
+              <div class="card-body top-card">
+                <h5 class="card-title">React: AAWAD Blog App</h5>
+                <p class="card-text">Blog React App with engaging features and auto rendering!</p>
+              </div>
+              <div class="card-body middle-card">
+                <a href="https://github.com/abdulawad93/aawadblog_app" class="card-link btn btn-primary">GitHub</a>
+                <a href="https://aawadblogapp.herokuapp.com/" class="card-link btn btn-primary">App</a>
+              </div>
+              <div class="card-body bottom-card">
+                <p class="card-text"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-node-js"></i> <i class="fab fa-react"></i> <i class="fa fa-database"></i> <i class="fab fa-aws"> <i class="fas fa-sign-in-alt"></i></i></p>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="card">
+              <img class="card-img-top" src="images/newsHome.JPG" alt="aawad-blog-app">
+              <div class="card-body top-card">
+                <h5 class="card-title">EJS: AAWAD News App</h5>
+                <p class="card-text">NewsAPI EJS App with hourly worldwide news from different sources. Users can filter news articles by language and category!</p>
+              </div>
+              <div class="card-body middle-card">
+                <a href="https://github.com/abdulawad93/aawad_news" class="card-link btn btn-primary">GitHub</a>
+                <a href="https://protected-brushlands-25948.herokuapp.com/" class="card-link btn btn-primary">App</a>
+              </div>
+              <div class="card-body bottom-card">
+                <p class="card-text"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-node-js"></i> <i class="fas fa-sign-in-alt"></i></i></p>
+              </div>
+            </div>
+            </div>
+
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
   </div>
   <div id="contact">
     <div class="container-fluid">
@@ -252,19 +325,19 @@
   </div>
     </div>
 
-  
-      <!-- JQuery Google CDN -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+    <!-- JQuery Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
       <!-- Bootstap Script CSS -->
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+
       <script src="index.js"></script>
 </body>
 <footer>
-
+  Copyright © Abdul Rahman Awad 2020
 </footer>
 
 </html>

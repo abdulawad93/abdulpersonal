@@ -8,8 +8,13 @@ $(".msgTitle").on("keydown", function(event){
   }
 });
 
+console.log($(".profile-pic-container").css("height")+"px");
+$(".profile-pic").css("height",$(".profile-pic-container").css("height")+"px");
+
 if($(window).width()<992){
+
 $(".nav-link").on('click', function(){
     $(".navbar-collapse").collapse('hide');
+    console.log("okay");
 });
 }
